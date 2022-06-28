@@ -1,0 +1,14 @@
+$opsans: 'Open Sans', sans-serif;
+$martel: 'Martel', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $opsans;
+    background-color: black;
+}
