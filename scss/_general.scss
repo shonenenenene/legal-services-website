@@ -1,6 +1,6 @@
-$opsans: 'Open Sans', sans-serif;
-$martel: 'Martel', sans-serif;
-$montserrat: 'Montserrat', sans-serif;
+$opsans: "Open Sans", sans-serif;
+$martel: "Martel", sans-serif;
+$montserrat: "Montserrat", sans-serif;
 
 $deeppurp: #252B42;
 $bluegradient: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
@@ -10,8 +10,8 @@ $brown: #784F33;
 $textgray: #737373;
 $textblack: #252B42;
 
-$wrap: 1470px;
-$container: 1045px;
+$wrap: 1440px;
+$container: 1075px;
 $mc: 0 auto;
 
 @mixin flex($jc, $ai) {
@@ -32,15 +32,26 @@ body {
 .wrapper {
     max-width: $wrap;
     margin: $mc;
-    padding: 0 15px; 
 }
 
 .container {
     max-width: $container;
     margin: $mc;
+    padding: 0 15px; 
 }
 
 svg {
  width: 100%;
  height: 100%;
 }
+
+p {
+    font-family: $opsans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $textgray;
+    }
+
