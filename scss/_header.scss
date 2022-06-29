@@ -1,3 +1,119 @@
-.header {
-    display: flex;
+.header__container {
+    background-image: url(/img/cover.png);
+    min-height: 785px;
+    .top {
+        @include flex(space-between, center);     
+        height: 105px;
+        .top-menu {
+            .top-menu__list {
+                @include flex(flex-end, center);      
+                .top-menu__item {
+                    margin: 0 0 0 25px;
+                    a {
+                        color: $textgray;
+                        font-size: 14px;
+                        font-weight: 600;
+                        letter-spacing: 0.2px;
+                        display: block;
+                    }
+                } 
+            }
+        }
+        .h3 {
+            justify-self: flex-start;
+            font-family: $martel;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            color: $textblack;
+            width: 105px;
+            letter-spacing: 0.1px;
+        }
+        .search-and-cart {
+            display: flex;
+            flex-wrap: nowrap;
+            a {
+                height: 16px;
+                width: 16px;
+            }
+        }
+        .burger {   
+            justify-self: flex-end;
+            width: 23px;
+            height: 23px;
+        }
+    }
+
+    .header__hello {
+        @include flex(space-between, center);
+        .welcome {
+            @include flex(center, flex-start);
+            flex-direction: column;
+            h1 {
+                font-family: $martel;
+                color: $textblack;
+                font-size: 58px;
+                font-weight: 900;
+                line-height: 65px;
+                max-width: 510px;
+                letter-spacing: 0.2px;
+                margin-bottom: 35px ;
+            }
+            h4 {
+                font-family: $montserrat;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+                margin-bottom: 45px;
+                max-width: 380px;
+            }
+            .welcome__btns {
+                @include flex(center, center);              
+                .btn-1 {
+                    width: 180px;
+                    height: 48px;
+                    color: #FFFFFF;  
+                    font-family: $opsans; 
+                    text-align: center;        
+                    font-weight: 700;                        
+                    padding: 10px 36px;
+                    margin-right: 20px;
+                    border-radius: 37px;
+                    transition: 0.3s;
+                    background: $brown;
+                    &:hover {
+                        background: rgba($color: $brown, $alpha: 0.9);
+                    }
+                    
+                }
+                .btn-2 {
+                    color: $brown;
+                    border: 1px solid $brown;
+                    border-radius: 37px;
+                    font-family: $opsans;  
+                    text-align: center;    
+                    font-weight: 700; 
+                    width: 155px;
+                    height: 48px;
+                    padding: 10px 36px;
+                    transition: 0.3s;
+                    &:hover {
+                        background: rgba($color: $brown, $alpha: 0.15);
+                    }
+                }
+            }
+        }
+        .womanpic {
+            width: 564px;
+            height: 680px;
+            align-self: flex-end;
+        }
+    }
+
 }
+
+
+
+
+
