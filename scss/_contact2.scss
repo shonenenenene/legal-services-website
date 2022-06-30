@@ -1,0 +1,37 @@
+.contact2 {
+    background: #FAFAFA;
+    min-height: 142px;
+}
+
+.contact2__container {
+    @include flex (space-between, center);
+    div {
+        @include flex (center, flex-start);
+        flex-direction: column;
+        min-height: 142px;
+    }
+    h3 {
+        font-family: $martel;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        color: $textblack;
+        margin-bottom: 10px;
+    }
+    button {
+        margin-right: 150px;
+        background: $brown;
+        border-radius: 5px;
+        padding: 15px 40px;
+        font-family: $opsans;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+}

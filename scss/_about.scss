@@ -1,11 +1,11 @@
 .about {
     background: #FFFFFF;
+    min-height: 890px;
 }
 
 .about__container {
     @include flex(flex-start, space-between);
     flex-direction: column;
-    min-height: 890px;
     .about__h2 {
         margin: 100px 0 15px 0;
     }
