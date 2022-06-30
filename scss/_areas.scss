@@ -1,8 +1,10 @@
-.areas__container {
+.areas {
     background: #FFFFFF;
+    min-height: 530px;
+}
+.areas__container {
     @include flex(center, center);
     flex-direction: column;
-    min-height: 530px;
     h2 {
         max-width: 375px;
         margin-top: 100px;

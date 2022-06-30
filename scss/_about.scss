@@ -1,0 +1,57 @@
+.about {
+    background: #FFFFFF;
+}
+
+.about__container {
+    @include flex(flex-start, space-between);
+    flex-direction: column;
+    min-height: 890px;
+    .about__h2 {
+        margin: 100px 0 15px 0;
+    }
+    .about__p {
+        max-width: 470px;
+        text-align: center;
+        align-self: center;
+        margin-bottom: 100px;
+    }
+    .about__info {
+        @include flex(center, flex-start);
+        .about__card {
+            @include flex(center, flex-start);
+            flex-direction: column;
+            max-width: 320px;
+            margin-left: 120px;
+            h2 {
+                text-align: left;
+                margin: 30px 0 15px 0;
+            }
+            p {
+                width: 305px;
+                margin-bottom: 15px;
+            }
+            .about__item {
+                align-self: flex-end;
+                h5 {
+                    max-width: 275px;
+                }
+                h6 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 0.2px;
+                    color: $textgray;
+                }
+                .about__svg {
+                    position: relative;
+                    width: 33px;
+                    height: 30px;
+                    left: -50px;
+                    top: 32px;
+                }
+            }
+        }
+
+    }
+}

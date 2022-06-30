@@ -1,0 +1,84 @@
+.partners {
+    background: linear-gradient(to bottom, #FAFAFA 82%, $deeppurp 82%);
+    min-height: 340px;
+}
+
+.partners__container {
+    .logos {
+        padding-top: 50px;
+        margin-bottom: 70px;
+        .logo-1 {
+            width: 103px;
+            height: 34px;
+        }
+        .logo-2 {
+            width: 83px;
+            height: 59px;
+        }
+        .logo-3 {
+            width: 102px;
+            height: 75px;
+        }
+        .logo-4 {
+            width: 103px;
+            height: 42px;
+        }
+        .logo-5 {
+            width:  104px;
+            height: 62px;
+        }
+        .logo-6 {
+            width: 76px;
+            height: 72px;
+        }
+        @include flex (space-around, center);
+    }
+    .subscribe {
+        @include flex (space-around, center);
+        background: $bluegradient;
+        border-radius: 2px;
+        min-height: 124px;
+        h3 {
+            color: white;
+            font-family: $martel;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: 0.1px;
+            max-width: 250px;
+        }
+        .subform {
+            border: 1px solid #E6E6E6;
+            border-radius: 5px;
+        }
+        input {
+            width: 330px;
+            height: 60px;
+            outline: none;
+            border: none;
+            padding-left: 20px;
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            letter-spacing: 0.2px;
+            color: $textgray;
+        }
+        .subbtn {
+            width: 120px;
+            height: 60px;
+            font-family: $montserrat;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: #FFFFFF;
+            background: $bronze;
+            margin-left: -10px;
+        }
+    }
+}
