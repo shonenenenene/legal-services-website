@@ -41,6 +41,27 @@ body {
     padding: 0 15px; 
 }
 
+h2 {
+    font-family: $martel;
+    color: $textblack;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h5 {
+font-family: $martel;
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0.1px;
+color: $textblack;
+}
+
 svg {
     width: 100%;
     height: 100%;

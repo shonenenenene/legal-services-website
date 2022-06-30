@@ -1,0 +1,42 @@
+.advice {
+    background: #FAFAFA;
+}
+.advice__container {
+    @include flex(flex-start, center);
+    flex-direction: column;
+    min-height: 700px;
+    h2 {
+        margin-top: 105px;
+    }
+    p {
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    .advice__cards {
+        @include flex(center, center);
+        gap: 40px;
+        .advice__card {
+            position: relative;
+            background: #FFFFFF;
+            width: 230px;
+            height: 320px;
+            h5 {
+                margin: 30px 0 0 30px;
+                text-align: left;
+                width: 140px;
+            }
+            p {
+                margin: 15px 0 0 30px;
+                width: 160px;
+                text-align: left;
+            }
+            img {
+                position: absolute;
+                bottom: 0;
+                height: 138px;
+                width: 230px;
+
+            }
+        }
+    }
+}

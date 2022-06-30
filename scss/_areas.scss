@@ -1,18 +1,11 @@
 .areas__container {
-    margin-top: 100px;
     background: #FFFFFF;
     @include flex(center, center);
     flex-direction: column;
-    .h2 {
-        font-family: $martel;
-        color: $textblack;
+    min-height: 530px;
+    h2 {
         max-width: 375px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 50px;
-        margin-bottom: 10px;
-        text-align: center;
+        margin-top: 100px;
     }
     .paragraph {
         max-width: 431px;
