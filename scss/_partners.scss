@@ -79,6 +79,10 @@
             color: #FFFFFF;
             background: $bronze;
             margin-left: -10px;
+            transition: 0.3s;
+            &:hover {
+                background: #b88d38;
+            }
         }
     }
 }

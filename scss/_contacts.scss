@@ -1,0 +1,76 @@
+.contacts {
+    background: #F3F3F3;
+    min-height: 800px;
+}
+
+.contacts__container {
+    @include flex(center, center);
+    flex-direction: column;
+    h2 {
+        margin: 80px 0 10px 0;
+    }
+    p {
+        max-width: 430px;
+        margin-bottom: 80px;
+        text-align: center;
+    }
+    .contacts__cards {
+        @include flex(center, center);
+        .contacts__item {
+            @include flex(center, center);
+            flex-direction: column;
+            width: 328px;
+            height: 333px;
+            background: white;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            color: $textblack;
+            h5 {
+                margin: 15px 0 15px 0;
+            }
+            &:nth-child(2) {
+                width: 328px;
+                height: 393px;
+                background: $deeppurp;
+                color: white;
+                h5 {
+                    color: white;
+                }
+                button {
+                    &:hover {
+                        background: #2b324d;
+                    }
+                }
+            }
+            .cont-svg {
+                width: 72px;
+                height: 72px;
+                margin-bottom: 15px;
+            }
+            button {
+                font-family: $opsans;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $bronze;
+                border: 1px solid $bronze;
+                border-radius: 5px;
+                width: 155px;
+                height: 45px;
+                transition: 0.3s;
+                &:hover {
+                    background: rgba($color: $bronze, $alpha: 0.1);
+                }
+            }
+            .deviant {
+                width: 58px;
+            }     
+        }
+    }
+}
