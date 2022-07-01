@@ -26,7 +26,7 @@
         flex-wrap: nowrap;
         height: 100px;
         .navbar {
-            margin-left: 40vw;
+            margin-left: 30vw;
             @include flex(center, center);
             .navbar_item {
                 margin-left: 25px;
@@ -48,13 +48,13 @@
         }
         .search-and-cart {
             width: 50px;
-            margin-left: 50px;
+            margin-left: 20px;
             margin-right: 50px;
-             @include flex(space-between, center);
+            @include flex(space-between, center);
             flex-wrap: nowrap;
              a {
-                 height: 16px;
-                 width: 16px;
+                height: 16px;
+                width: 16px;
              }
         }
         .burger {
@@ -138,6 +138,9 @@
 }
 
 @media (max-width: 929px) {
+    .header__container {
+        overflow: hidden;
+    }
     .welcome {
         margin-top: 80px;
         justify-content: center !important;
@@ -165,6 +168,10 @@
     .top {
         .navbar {
             display: none !important;
+        }
+        .search-and-cart {
+            position: absolute !important;
+            right: 40px;
         }
         .burger {
             display: block !important;
@@ -195,6 +202,22 @@
                 height: 2px;
                 top: 6px;
             }
+        }
+    }
+    .navbar.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    .top .navbar.responsive {
+        height: 340px;
+    }
+    .navbar.responsive {
+        a {
+            float: none;
+            top: -50px;
+            text-align: center;
+
         }
     }
 }
