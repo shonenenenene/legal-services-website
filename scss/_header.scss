@@ -1,5 +1,8 @@
+// .wrapper {
+//     background-image: url(/img/cover.png);
+// }
 .header {
-    background-image: url(/img/cover.png);
+    background-image: url(../img/cover.png);
     min-height: 785px;
 }
 
@@ -137,10 +140,8 @@
     }
 }
 
+
 @media (max-width: 929px) {
-    .header__container {
-        overflow: hidden;
-    }
     .welcome {
         margin-top: 80px;
         justify-content: center !important;
