@@ -19,7 +19,8 @@
         .contacts__item {
             @include flex(center, center);
             flex-direction: column;
-            width: 328px;
+            max-width: 328px;
+            min-width: 328px;
             height: 333px;
             background: white;
             font-style: normal;
@@ -33,7 +34,6 @@
                 margin: 15px 0 15px 0;
             }
             &:nth-child(2) {
-                width: 328px;
                 height: 393px;
                 background: $deeppurp;
                 color: white;
@@ -73,4 +73,23 @@
             }     
         }
     }
+}
+
+@media (max-width: 1020px) {
+    .contacts__cards {
+        flex-direction: column;
+        .contacts__item {
+            min-width: 280px !important;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .contacts__item {
+        min-width: 280px !important; 
+        }
 }

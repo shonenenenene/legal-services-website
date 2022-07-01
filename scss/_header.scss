@@ -1,63 +1,84 @@
-.header__container {
+.header {
     background-image: url(/img/cover.png);
     min-height: 785px;
-    .top {
-        @include flex(space-between, center);     
-        height: 105px;
-        .top-menu {
-            .top-menu__list {
-                @include flex(flex-end, center);      
-                .top-menu__item {
-                    margin: 0 0 0 25px;
-                    a {
-                        color: $textgray;
-                        font-size: 14px;
-                        font-weight: 600;
-                        letter-spacing: 0.2px;
-                        display: block;
-                    }
-                } 
-            }
-        }
-        .h3 {
-            justify-self: flex-start;
+}
+
+.header__container {
+    @include flex(space-between, space-between);
+    flex-direction: column;
+    min-height: 785px;
+    position: relative;
+    .logo {
+        position: absolute;
+        top: 35px;
+        left: 15px;
+        a {
             font-family: $martel;
             font-weight: 700;
             font-size: 24px;
             line-height: 32px;
             color: $textblack;
-            width: 105px;
             letter-spacing: 0.1px;
         }
-        .search-and-cart {
-            display: flex;
-            flex-wrap: nowrap;
+    }
+    .top {
+        @include flex(space-between, center);
+        flex-wrap: nowrap;
+        height: 100px;
+        .navbar {
+            margin-left: 40vw;
+            @include flex(center, center);
+            .navbar_item {
+                margin-left: 25px;
+            }
             a {
-                height: 16px;
-                width: 16px;
+                font-family: $opsans;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.2px;
+                color: $textgray;
+                transition: 0.3s;
+                &:hover {
+                    color: $textblack;
+                }
             }
         }
-        .burger {   
-            justify-self: flex-end;
-            width: 23px;
-            height: 23px;
+        .search-and-cart {
+            width: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+             @include flex(space-between, center);
+            flex-wrap: nowrap;
+             a {
+                 height: 16px;
+                 width: 16px;
+             }
+        }
+        .burger {
+            display: none;
+            position: absolute;
+            right: 15px;
         }
     }
-
-    .header__hello {
+    .welcome {
         @include flex(space-between, center);
-        .welcome {
+        flex-wrap: nowrap;
+        .welcome__card {
             @include flex(center, flex-start);
             flex-direction: column;
+            gap: 35px;
+            margin-bottom: 150px;
             h1 {
                 font-family: $martel;
                 color: $textblack;
                 font-size: 58px;
                 font-weight: 900;
                 line-height: 65px;
-                max-width: 510px;
+                max-width: 500px;
                 letter-spacing: 0.2px;
-                margin-bottom: 35px ;
             }
             h4 {
                 font-family: $montserrat;
@@ -65,11 +86,12 @@
                 font-size: 20px;
                 line-height: 30px;
                 letter-spacing: 0.2px;
-                margin-bottom: 45px;
                 max-width: 380px;
+                margin-bottom: 10px;
             }
-            .welcome__btns {
-                @include flex(center, center);              
+            .welcome_btns {
+                gap: 35px;
+                @include flex(space-between, center);              
                 .btn-1 {
                     width: 180px;
                     height: 48px;
@@ -78,7 +100,6 @@
                     text-align: center;        
                     font-weight: 700;                        
                     padding: 10px 36px;
-                    margin-right: 20px;
                     border-radius: 37px;
                     transition: 0.3s;
                     background: $brown;
@@ -105,16 +126,81 @@
             }
         }
         .womanpic {
-            width: 564px;
-            height: 680px;
-            margin-right: -30px;
-            align-self: flex-end;
+            display: flex;
+            max-width: 550px;
+            height: auto;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
-
 }
 
+@media (max-width: 929px) {
+    .welcome {
+        margin-top: 80px;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        h1 {
+            font-size: 40px !important;
+            font-weight: 700 !important;
+            text-align: center;
+            max-width: 400px;
+        }
+        h4 {
+            text-align: center;
+            margin-left: 15px;
+        }
+        .welcome_btns {
+            flex-direction: column;
+            align-self: center !important;
+        }
+        .welcome__card {
+            align-items: center;
+            width: 350px;
+        }
+    }
+    .top {
+        .navbar {
+            display: none !important;
+        }
+        .burger {
+            display: block !important;
+            position: relative;
+            width: 15px;
+            height: 14px;
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                background: $textgray;
+                height: 2px;
+                right: 0;
+            }
+            &::before {
+                top: 0;
+                width: 140%;
+            }
+            &::after {
+                bottom: 0;
+                width: 65%;
+            }
+            span {
+                position: absolute;
+                left: 0;
+                background: $textgray;
+                width: 100%;
+                height: 2px;
+                top: 6px;
+            }
+        }
+    }
+}
 
-
-
-
+@media (max-width: 380px) {
+    .welcome__card {
+        width: 350px;
+    }
+}

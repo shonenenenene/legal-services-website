@@ -21,7 +21,7 @@
         margin-bottom: 10px;
     }
     button {
-        margin-right: 150px;
+        margin-right: 100px;
         background: $brown;
         border-radius: 5px;
         padding: 15px 40px;
@@ -33,5 +33,23 @@
         text-align: center;
         letter-spacing: 0.2px;
         color: #FFFFFF;
+        transition: 0.3s;
+        &:hover {
+            background: #8a5b3b;
+        }
     }
 }
+
+@media (max-width: 810px) {
+    .contact2__container {
+        div {
+            margin-left: 30px;
+        }
+        button {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+    }
+}
+
+

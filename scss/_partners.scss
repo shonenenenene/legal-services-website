@@ -5,8 +5,10 @@
 
 .partners__container {
     .logos {
+        @include flex (space-around, center);
         padding-top: 50px;
         margin-bottom: 70px;
+        gap: 30px;
         .logo-1 {
             width: 103px;
             height: 34px;
@@ -31,7 +33,6 @@
             width: 76px;
             height: 72px;
         }
-        @include flex (space-around, center);
     }
     .subscribe {
         @include flex (space-around, center);
@@ -86,3 +87,31 @@
         }
     }
 }
+
+@media (max-width: 550px) {
+    .logos {
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 50px;
+    }
+    .subscribe {
+        h3 {
+            padding: 15px;
+        }
+        padding-bottom: 15px;
+    }
+}
+
+@media (max-width: 800px) {
+    .subscribe {
+        input {
+            width: 210px !important;
+        }
+    }
+    .subbtn {
+        width: 80px !important;
+    }
+
+}
+
+

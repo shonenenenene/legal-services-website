@@ -69,3 +69,20 @@
         margin-right: 20px;
     }
 }
+
+@media (max-width: 420px) {
+    .footer__container {
+        padding-left: 60px;
+        flex-direction: column !important;
+        &:last-child {
+            padding-bottom: 30px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .bottom__container {
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+}

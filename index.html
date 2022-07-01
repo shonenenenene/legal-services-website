@@ -8,53 +8,48 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
    <div class="wrapper">
-        <header class="header__container">
-                <div class="container">
-                    <div class="top">
-                        <h3 class="h3">Legalide</h3>
-                        <nav class="top-menu">
-                            <ul class="top-menu__list">
-                                <li class="top-menu__item"><a href="#">Home</a></li>
-                                <li class="top-menu__item"><a href="#">Product</a></li>
-                                <li class="top-menu__item"><a href="#">Pricing</a></li>
-                                <li class="top-menu__item"><a href="#">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="search-and-cart">
-                            <a href="#">
-                                <svg>
-                                    <use xlink:href="img/sprite-icons.svg#loupe"></use>                       
-                                </svg>
+        <header class="header">
+            <div class="container header__container">
+                <h3 class="logo"><a href="#">Legalide</a></h3>
+                <nav class="top">
+                    <ul class="navbar">
+                        <li class="navbar_item"><a href="#">Home</a></li>
+                        <li class="navbar_item"><a href="#">Product</a></li>
+                        <li class="navbar_item"><a href="#">Pricing</a></li>
+                        <li class="navbar_item"><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="search-and-cart">
+                         <a href="#">
+                             <svg>
+                                 <use xlink:href="img/sprite-icons.svg#loupe"></use>                       
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#cart"></use>                       
+                            </svg>
                             </a>
-                            <a href="#">
-                                <svg>
-                                    <use xlink:href="img/sprite-icons.svg#cart"></use>                       
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="burger">
-                            <a href="#">
-                                <svg>                           
-                                        <use xlink:href="img/sprite-icons.svg#burger"><use>                                     
-                                </svg>
-                            </a>
-                        </div>
                     </div>
-                </div>
-                <div class="container header__hello">
-                    <div class="welcome">
-                        <h1 class="h1">Help to reclaim your life and freedom </h1>
-                        <h4 class="h4">We know how large objects will act, 
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="welcome">
+                    <div class="welcome__card">
+                        <h1>Help to reclaim your life and freedom </h1>
+                        <h4>We know how large objects will act, 
                             but things on a small scale.</h4>
-                        <div class="welcome__btns">
+                        <div class="welcome_btns">
                             <button class="btn-1">Get Quote Now</button>
                             <button class="btn-2">Learn More</button>
                         </div>
                     </div>
-                    <img class="womanpic" src="/img/woman.png"></img>
+                    <div class="womanpic">
+                        <img src="/img/woman.png"></img>
+                    </div>
                 </div>
+            </div>
         </header>
         <section class="areas">
             <div class="container areas__container">
@@ -167,7 +162,7 @@
                 <p class="about__p">Problems trying to resolve the conflict between the two major realms 
                     of Classical physics: Newtonian mechanics </p>
                 <div class="about__info">
-                    <iframe width="600" height="440" src="https://www.youtube.com/embed/b9TE3226T-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                    <iframe src="https://www.youtube.com/embed/b9TE3226T-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
                     <div class="about__card">            
                         <h2>Most trusted in 
                             our field</h2>
@@ -359,26 +354,30 @@
                 <div class="container bottom__container">
                     <h6>Made With Love By Shoneneenenene All Right Reserved </h6>
                     <div class="bottom__icons__cont">
+                        <a href="#">
                         <div>
                             <svg>
                                 <use xlink:href="img/sprite-icons.svg#facebook"></use>
                             </svg>
-                        </div>
+                        </div></a>
+                        <a href="#">
                         <div>
                             <svg>
                                 <use xlink:href="img/sprite-icons.svg#insta"></use>
                             </svg>
-                        </div>
+                        </div></a>
+                        <a href="#">
                         <div>
                             <svg>
                                 <use xlink:href="img/sprite-icons.svg#twitter"></use>
                             </svg>
-                        </div>
+                        </div></a>
+                        <a href="#">
                         <div>
                             <svg>
                                 <use xlink:href="img/sprite-icons.svg#youtube"></use>
                             </svg>
-                        </div>
+                        </div></a>
                     </div>
                 </div>
             </div>
